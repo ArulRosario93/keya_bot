@@ -1,0 +1,215 @@
+.chatRoom {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: scroll;
+  margin-top: -13px;
+  z-index: -10;
+}
+.chatRoom {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.chatRoom::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+.scrollMsg {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollMsg::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+.scrollMsg{
+  overflow-y: scroll;
+}
+.chatRoom .timehere{
+    margin: 15px 0px;
+    padding-top: 13px;
+}
+.btnsHere {
+  top: 0%;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.btn {
+  padding: 0px 1px;
+  max-width: 6rem;
+  margin-right: 10px;
+  background: aqua;
+  float: left;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  min-width: 4rem;
+}
+.btn p{
+    font-size: smaller;
+}
+.bot {
+  background-color: #fffa;
+  position: relative;
+}
+.icon{
+  float: left;
+  max-width: 272px;
+  min-width: 210px;
+}
+.icon .messageWidthShortened .timeHere{
+  text-align: left;
+}
+.icon .messageWidthShortened{
+  background-color: rgba(255, 255, 255, 0.952); 
+  border-radius: 10px;
+  font-size:smaller;
+  margin-top: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 11px 11px 1px 9px;
+  width: fit-content;
+}
+.icon p{
+  margin-top: 7px;
+}
+.sent{
+    position: relative;
+    float: right;
+    max-width: 280px;
+    min-width: 210px;
+    padding-bottom: 25px;
+}
+.typing{
+  position: absolute;
+  bottom: 50px;
+  left: 12px;
+  background-color: rgba(255, 255, 255, 0.952); 
+  border-radius: 10px;
+  vertical-align: middle;
+  font-size:smaller;
+  margin-top: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 6px 11px 6px 9px;
+  width: fit-content;
+}
+.received{
+    max-width: 280px;
+    min-width: 210px;
+    float: left;
+  }
+  .sent .messageWidthShortened .timeHere{
+    text-align: right;
+  }
+  .received .messageWidthShortened .timeHere{
+    text-align: left;
+  }
+  pre {
+    font-size: small;
+    font-family: sans-serif;
+    margin: 0%;
+    padding: 3px 0px;
+    white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+    white-space: -pre-wrap; /* Opera */
+    white-space: -o-pre-wrap; /* Opera */
+    white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+    word-wrap: break-word; /* IE 5.5+ */
+}
+  .received .messageWidthShortened{
+    background-color: rgba(255, 255, 255, 0.952); 
+    border-radius: 10px;
+    font-size:smaller;
+    margin-top: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    padding: 11px 11px 1px 9px;
+    width: fit-content;
+}
+.sent .messageWidthShortened{
+  border-radius: 10px;
+  width: fit-content;
+  text-align: right;
+  color:aliceblue;
+  background-color:  rgba(12, 12, 12, 0.904);
+  padding: 12px 14px 2px;
+  font-size: smaller;
+  border-radius: 10px;
+  float: right;
+}
+.sent p{
+  margin-top: 7px;
+}
+.received p{
+  margin-top: 7px;
+}
+.buttonHere{
+  padding: 0px 9px;
+}
+.sendBtn{
+  border: .5px solid gray;
+  padding: 1px 3px;
+}
+.sendBtn p{
+  margin: 0%;
+  padding: 0%;
+}
+.inputContainer{
+  left: 0%;
+  bottom: 0%;
+  background: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  border-top: .5 solid black;
+}
+.inputContainer input{
+  outline: none;
+  border: none;
+  width: 100%;
+  background: none;
+  font-weight: lighter;
+}
+.Recommended{
+    box-sizing: border-box;
+    float: left;
+    height: auto;
+    padding: 1% 0;
+    width: 100%;
+}
+.Recommended .messageWidthShortened{
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+    font-size: smaller;
+    margin-top: 10px;
+    padding: 11px 11px 1px 9px;
+}
+.Recommended .messageWidthShortened h4{
+  margin: 0%;
+  padding: 6px 0px;
+}
+.RecommendedText{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .RecommendedText p {
+    margin: 0;
+    padding: 5px 0;
+  }
+  .ANswerHere{
+  transition-timing-function: ease;
+  height: auto;
+  width: 100%;
+}
+.ANswerHere p{
+  padding: 1.5px 0px 1.5px 5px;
+}
+.QusHolder div{
+  transition-timing-function: linear;
+  transition: .2s;
+}
+.QusHolder div p{
+  transition-timing-function: linear;
+  transition: 1s;
+}
